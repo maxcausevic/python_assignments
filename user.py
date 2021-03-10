@@ -32,13 +32,13 @@ Maxine = User('Maxine Causevic', 'maxine@fitmaxpersonaltraining.com',(10000))
 Christine = User('Christine Chaikouang', 'cchaikouang@gmail.com', (20000))
 Robert = User('Robert Chaikouang', 'rchaikouang@gmail.com', (30000))
 
+Maxine.make_deposit(3000).make_deposit(2000).make_deposit(100).make_withdrawal(100)
 print(Maxine.account_balance)
-Maxine.make_deposit(3000)
-print(Maxine.account_balance)
-Maxine.make_deposit(2000)
-Maxine.make_deposit(100)
-Maxine.make_withdrawal(100)
 print(f"{Maxine.name} {Maxine.email} {Maxine.account_balance}")
 
-Christine.make_deposit()
+Christine.make_deposit(200).make_deposit(200).make_deposit(200).make_deposit(200)
+print(Christine.account_balance)
+
+Robert.make_deposit(500).make_withdrawal(100).make_withdrawal(100)
+print(Robert.account_balance)
 

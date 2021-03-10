@@ -2,7 +2,7 @@ class User:		# here's what we have so far
     def __init__(self, name, email, account_balance):
         self.name = name
         self.email = email
-        self.account_balance = 0
+        self.account_balance = account_balance
     # adding the deposit method
     def make_deposit(self, amount):	# takes an argument that is the amount of the deposit
         self.account_balance += amount
@@ -24,3 +24,5 @@ Maxine.make_deposit(2000)
 Maxine.make_deposit(100)
 Maxine.make_withdrawal(100)
 print(f"{Maxine.name} {Maxine.email} {Maxine.account_balance}")
+
+Christine.make_deposit(200).make_deposit(200).make_deposit(200)
